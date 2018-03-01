@@ -1,8 +1,9 @@
 var katzDeli = []
+var peopleCount = 0
 
-function takeANumber(katzDeliLine, customerName) {
-  katzDeliLine.push(customerName)
-  return `Welcome, ${customerName}. You are number ${katzDeliLine.length} in line.`
+function takeANumber(katzDeliLine) {
+  peopleCount++
+  return `You are number ${peopleCount}.`
 }
 
 function nowServing(katzDeliLine) {
